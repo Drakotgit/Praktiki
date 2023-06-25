@@ -1,3 +1,4 @@
+#1
 function gcd(a, b)
     while !(b == 0)
         a, b = b, a%b
@@ -5,6 +6,7 @@ function gcd(a, b)
     return a
 end
 
+#2
 function gcdx(a, b, c)
     x1, x2, y1, y2 = c, 0, 0, c
     #println(a, " ", b)
@@ -24,6 +26,7 @@ function gcdx(a, b, c)
     return a, x1, y1
 end
 
+#3
 function invmod(a, m)
     if gcdx(a, m, 1)[1]==1
         return(gcdx(a, m, 1)[2])
@@ -32,6 +35,7 @@ function invmod(a, m)
     end
 end
 
+#4
 function diaphant_solve(a, b, c)
     if gcdx(a, b, c)[1]==1
         return (gcdx(a, b, c)[2], gcdx(a, b, c)[3])
