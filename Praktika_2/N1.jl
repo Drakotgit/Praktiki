@@ -1,5 +1,7 @@
+import Base: one
+
 function fastpow( a :: T, pow :: Int) where T
-    k :: T, t :: T, p :: Int = a, 1, pow
+    k :: T, t :: T, p :: Int = a, one(T), pow
     while !iszero(p)
         if iseven(p)
             k*= k
