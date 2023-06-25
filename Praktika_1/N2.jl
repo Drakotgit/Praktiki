@@ -1,4 +1,4 @@
-include("N1")
+include("N1.jl")
 
 function gcdx(a, b, c)
     x1, x2, y1, y2 = c, 0, 0, c
